@@ -1,0 +1,12 @@
+<app-add-user (userAdd)="AddUser($event)"></app-add-user>
+<h4>User List</h4>
+
+<div *ngIf="this.users.length === 0; else elseBlock">No Added Users</div>
+<ng-template #elseBlock>
+  <div *ngFor="let user of users">
+    <app-user-item
+      [user]="user"
+      (userDelete)="deleteUser($event)"
+    ></app-user-item>
+  </div>
+</ng-template>

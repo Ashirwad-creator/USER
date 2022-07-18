@@ -1,0 +1,19 @@
+<div class="my-3">
+  <div *ngIf="!shouldEditUser">
+    <h4>{{ user.name }}</h4>
+    <h5>{{ user.email }}</h5>
+    <h5>{{ user.Id }}</h5>
+
+    <button class="btn btn-sm btn-danger" (click)="onclick(user)">
+      Delete
+    </button>
+    <button class="btn btn-sm btn-warning" (click)="onEdit(user)">Edit</button>
+  </div>
+  <div *ngIf="shouldEditUser">
+    <p>Editing User</p>
+    <input type="text" [(ngModel)]="user.name" />
+    <input type="email" [(ngModel)]="user.email" />
+    <input type="email" [(ngModel)]="user.Id" />
+    <button class="btn btn-sm btn-primary" (click)="onSave(user)">Save</button>
+  </div>
+</div>

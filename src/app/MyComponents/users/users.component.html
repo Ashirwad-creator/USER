@@ -3,10 +3,12 @@
 
 <div *ngIf="this.users.length === 0; else elseBlock">No Added Users</div>
 <ng-template #elseBlock>
-  <div *ngFor="let user of users">
-    <app-user-item
-      [user]="user"
-      (userDelete)="deleteUser($event)"
-    ></app-user-item>
+  <div class="ListPresentation">
+    <div *ngFor="let user of users">
+      <app-user-item
+        [user]="user"
+        (userDelete)="deleteUser($event)"
+      ></app-user-item>
+    </div>
   </div>
 </ng-template>

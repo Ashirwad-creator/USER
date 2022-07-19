@@ -2,7 +2,7 @@
   <h4>Add a User</h4>
 
   <div class="container1">
-    <form (ngSubmit)="onsubmit()">
+    <form (ngSubmit)="onsubmit()" class="form-inline">
       <div class="form-group row g-4">
         <div class="form-group col-sm-4">
           <input
@@ -15,7 +15,7 @@
             aria-label="Name"
           />
         </div>
-        <div class="form-group col-sm-3">
+        <div class="form-group col-sm-4">
           <input
             type="text"
             [(ngModel)]="email"
@@ -26,7 +26,7 @@
             aria-label="E-Mail"
           />
         </div>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-4">
           <input
             type="text"
             [(ngModel)]="Id"
@@ -36,8 +36,9 @@
             placeholder="Emp.Id"
             aria-label="Emp.Id"
           />
-          <div class="col-12">
-            <button type="submit" class="btn btn-sm btn-primary">submit</button>
+          <div class="btmsubmit"></div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-primary">submit</button>
           </div>
         </div>
       </div>

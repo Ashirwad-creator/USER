@@ -1,3 +1,8 @@
 .ListPresentation{
     flex: d-flex flex-row mb-3;
 }
+
+h4{
+    padding:10px;
+    font-weight: bold;
+}

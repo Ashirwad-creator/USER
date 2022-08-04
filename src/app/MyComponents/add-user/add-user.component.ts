@@ -37,6 +37,10 @@ export class AddUserComponent implements OnInit {
     }
 
     this.userAdd.emit(user);
+    this.name="";
+    this.email="";
+    this.Id="";
+    
    
   }
 

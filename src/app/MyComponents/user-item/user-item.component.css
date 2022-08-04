@@ -1,3 +1,7 @@
-.my-5{
-    display: inline-block;
+h5{
+    padding:10px;
+    font-weight: lighter;
+}
+button{
+    margin: 2px;    
 }
